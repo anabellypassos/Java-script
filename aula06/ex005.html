@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: rgb(47, 185, 239);
+            color: beige;
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id="msg">Clique em mim</div> 
+    <script>
+        var p1 =window.document.getElementsByTagName('p')[1]//indico o paragrafo q quero
+      window.document.write('Está escrito assim:'+ p1.innerText)//aqui exibe
+
+
+      var p1 = window.document.getElementsByTagName('p')[0]//indico o paragrafo que quero
+      p1.style.color= 'blue'//Muda a cor do paragrafo indicado
+        var d =window.document.getElementById('msg')//seleciona id
+        d.style.background = 'green' //mudou a cor de fundo do id
+        
+       /* d.innerText ='Estou aguardando...'//muda oque está escrito*/
+     /*  window.document.getElementById('msg').innerText='Estou aguardando...'*/ //Faz a mesma coisa
+
+
+
+    /*var corpo = window.document.body //seleciona o body 
+    corpo.style.background='pink'//troca a cor de fundo*/
+
+    </script>
+</body>
+</html>
